@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .card {
+            width: 400px;
+            height: 280px;
+            perspective: 1000px;
+            border-radius: 8px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            margin: auto;
+        }
+
+        .card .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .card .front, .card .back {
+            width: 50%; /* Adjust as needed */
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+            border-radius: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card .front {
+            z-index: 2;
+            transform: rotateY(0deg);
+        }
+
+        .card .back {
+            transform: rotateY(180deg);
+            background-color: #333;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.8s;
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .front {
+            z-index: 1;
+        }
+
+        .card:hover .back {
+            z-index: 2;
+            opacity: 1;
+        }
+
+        .card .back h2, .card .back p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .card .image-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 8px 0 0 8px; /* Rounded corners only at the left */
+        }
+
+        .card .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-description {
+            width: 50%; /* Adjust as needed */
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 0 8px 8px 0; /* Rounded corners only at the right */
+        }
+
+        .product-description h2 {
+            color: #333;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .product-description ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .product-description ul li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #666;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        footer .info-box {
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        footer .info-box img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        footer .info-box p {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-inner">
+            <div class="front">
+                <div class="image-box">
+                    <img src="https://assets.winni.in/product/primary/2021/12/56668.jpeg?dpr=1&w=400" alt="Product Image">
+                </div>
+                <div class="content">
+                    
+                </div>
+            </div>
+            <div class="back">
+                <div class="content">
+                    <h2>Together Forever Lamp</h2>
+                    <p>Description</p>
+                    <ul>
+                        <li>Shape: Heart-Shape</li>
+                        <li>Size: Weight 5.5 cm / Height 5 cm</li>
+                        <li>Product-Type: Key Chain</li>
+                        <li>Material: Hardened MDF</li>
+                        <li>Occasions: Love Couple Keychain</li>
+                        <li>For personalization, please provide us with 1 image</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-description">
+        <h2>Product Details:</h2>
+        <ul>
+            <li>Shape: Heart-Shape</li>
+            <li>Size: Weight 5.5 cm / Height 5 cm</li>
+            <li>Product-Type: Key Chain</li>
+            <li>Material: Hardened MDF</li>
+            <li>Occasions: Love Couple Keychain</li>
+            <li>For personalization, please provide us with 1 image</li>
+        </ul>
+        
+        <h2>Delivery Details:</h2>
+        <ul>
+            <li>The actual product may vary in shape, size, brand, and color as per local availability.</li>
+            <li>Messages on cards may not be available in a few areas.</li>
+            <li>If this product is shipped using the services of our courier partners, the date of delivery is an estimate.</li>
+            <li>Our courier partners do not call before delivering an order, so we recommend that you provide an address at which someone will be present to receive the package.</li>
+            <li>The delivery cannot be redirected to any other address.</li>
+            <li>All courier orders are carefully packed and shipped from our warehouse. Soon after the order has been dispatched, you will receive a tracking number that will help you trace your gift.</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="info-box">
+            <img src="/Users/praneetapericherla/Desktop/fullstackproject/delivery.png" alt="Free Shipping Icon">
+            <p>Free Shipping</p>
+        </div>
+        <div class="info-box">
+            <img src="/Users/praneetapericherla/Desktop/fullstackproject/payment.png" alt="Secure Payment Icon">
+            <p>Secure Payment</p>
+        </div>
+        <div class="info-box">
+            <img src="/Users/praneetapericherla/Desktop/fullstackproject/idk.png" alt="24/7 Support Icon">
+            <p>24/7 Support</p>
+        </div>
+    </footer>
+
+</body>
+</html>

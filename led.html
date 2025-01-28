@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="open.css">
+    <style>
+        .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 80px 160px 70px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 1000px; /* Updated width */
+    left: 0; /* Align to the left side */
+    padding: 20px; /* Add padding to avoid the content touching the edges */
+    box-sizing: border-box;
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap columns if necessary */
+}
+
+.dropdown-content .dropdown-column {
+    flex: 1; /* Equally distribute space */
+    min-width: 20px; /* Minimum width for columns */
+    padding: 0 10px; /* Padding between columns */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+/* Highlight the ANNIVERSARY link with pink color on hover */
+.dropdown:hover > a {
+    color: rgb(219, 20, 169);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 80px 160px 70px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 1000px; /* Updated width */
+    left: 50%; /* Center alignment */
+    transform: translateX(-42%); /* Adjust to center */
+    padding: 20px; /* Add padding to avoid the content touching the edges */
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head1">
+            <a href="#">Help</a> | 
+            <a href="#">Currency-INR</a>  |
+            <a href="#">Corporate Gifts</a>  |
+            <a href="#">Track Order</a> 
+        </div>
+        <div class="header-main">
+            <div class="logo">Logo</div>
+            <div class="nav_search">
+                <input placeholder="Search for gifts" class="search_input">
+                <i class="fa-solid fa-magnifying-glass search_icon"></i>
+            </div>
+            <div id="delivery-location" class="nav_address border">
+                <div class="add_icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add_sec">Delivery Location</p>
+                </div>
+            </div>
+            <div class="header-icons">
+                <a id="login-icon"><i class="fa-solid fa-person-walking-arrow-right"></i></a>
+                <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-buttons">
+                <li><button>EXPRESS</button></li>
+                <li><button>CAKES</button></li>
+                <li><button>FLOWERS</button></li>
+                <li><button>PLANTS</button></li>
+                <li><button>GIFTS</button></li>
+
+                <li class="dropdown">
+                    <button id="personalized-gifts-button">PERSONALIZED GIFTS</button>
+                    <div class="dropdown-content">
+                        <div class="col col1">
+                            <b>Personalized Gifts</b>
+                            <a href="page2.html">Mugs</a>
+                            <a href="page3.html">Cushions</a>
+                            <a href="page3.html">Yellow Strip</a>
+                            <a href="page3.html">Water Bottles</a>
+                            <a href="page3.html">Key Chains</a>
+                            <a href="page3.html">Clocks</a>
+                            <a href="page3.html">Chocolates</a>
+                            <a href="page3.html">Engraved Gifts</a>
+                            <a href="page3.html">T-shirts</a> 
+                            <a href="page3.html">Stationary Gifts</a>
+                            <a href="page3.html">Personalized Accessories</a>
+                        </div>
+                        <div class="col col2">
+                            <b>Special Gifts</b>
+                            <a href="page2.html">New arrival</a>
+                            <a href="page3.html">Photo Frames</a>
+                            <a href="page3.html">Led frames</a>
+                            <a href="page3.html">Photo To art</a>
+                            <a href="page3.html">Caricatures</a>
+                            <a href="page3.html">personalized combos</a>
+                            <a href="page3.html">Glassware</a>
+                        </div>
+                        <div class="col col3">
+                            <b>By Recipient</b>
+                            <a href="page2.html">For her</a>
+                            <a href="page3.html">For him</a>
+                            <a href="page3.html">For husband</a>
+                            <a href="page3.html">For wife</a>
+                            <a href="page3.html">For kids</a>
+                            <a href="page3.html">For couples</a>
+                           
+                        </div>
+                        <div class="col col4">
+                            <b>By Occasions</b>
+                            <a href="page2.html">Birthday Gifts</a>
+                            <a href="page3.html">Anniversary</a>
+                            <a href="page3.html">Wedding Gifts</a>
+                            <a href="page3.html">Water Bottles</a>
+                            <a href="page3.html">Love & Romance</a>
+                        </div>
+                    </div>
+                </li>
+                <li><button>CHOCOLATES</button></li>
+                <li><button>COMBOS</button></li>
+                <li><button>BIRTHDAY</button></li>
+                <li><button>ANNIVERSARY</button></li>
+                <li><button>OCCASIONS</button></li>
+                <li><div class="gif-container">
+                   <!-- <img src="delivery1.gif" alt="delivery"> -->
+                </div></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Delivery Location Modal -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please enter your delivery location:</p>
+            <input type="text" id="locationInput" placeholder="Enter location">
+            <button id="saveLocation">Save</button>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <button id="loginButton">Login</button>
+            </div>
+            <div class="switch-modal">
+                Don't have an account? <a id="showSignUp">Sign up here</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-Up Modal -->
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="signUpEmail">Email:</label>
+                <input type="email" id="signUpEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="signUpPassword">Password:</label>
+                <input type="password" id="signUpPassword" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <button id="signUpButton">Sign Up</button>
+            </div>
+            <div class="switch-modal">
+                Already have an account? <a id="showLogin">Login here</a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="filters-header">
+            <div class="filter-item">
+                <label for="delivery-date">Delivery Date:</label>
+                <input type="date" id="delivery-date">
+            </div>
+            <div class="filter-item">
+                <label for="filter-price">Filter By Price:</label>
+                <select id="filter-price">
+                    <option>All Products</option>
+                    <option>Under ₹500</option>
+                    <option>₹500 - ₹1000</option>
+                    <option>Over ₹1000</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option>Popularity</option>
+                    <option>Price: Low to High</option>
+                    <option>Price: High to Low</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="products">
+            <div class="card" onclick="redirectToDetailPage('product_detail.html?id=2')">
+                <img class="background" src="https://assets.winni.in/product/primary/2021/12/56668.jpeg?dpr=1&w=400" alt="Together Forever Led Lamp">
+                <div class="card-content">
+                    <h3 class="title">Together Forever Led Lamp</h3>
+                    <p class="price">₹ 999 <span class="discount">₹ 1,502</span> <span class="off">33% off</span></p>
+                    <p class="delivery-date">Earliest Delivery: 25 - Jun</p>
+                    <p class="rating">4.5 ★ <span class="reviews">(12 Reviews)</span></p>
+                </div>
+            </div>
+            <div class="card best-seller" onclick="redirectToDetailPage('product-detail.html?id=2')">
+                <img class="background" src="https://assets.winni.in/product/primary/2022/2/57892.jpeg?dpr=1&w=400" alt="Personalized Led Hologram Lamp">
+                <div class="card-content">
+                    <h3 class="title">Personalized Led Hologram Lamp</h3>
+                    <p class="price">₹ 1,249 <span class="discount">₹ 1,849</span> <span class="off">32% off</span></p>
+                    <p class="delivery-date">Earliest Delivery: 25 - Jun</p>
+                    <p class="rating">4.4 ★ <span class="reviews">(34 Reviews)</span></p>
+                </div>
+            </div>
+            <div class="card" onclick="redirectToDetailPage('product-detail.html?id=3')">
+                <img class="background" src="https://assets.winni.in/product/primary/2014/10/53130.jpeg?dpr=1&w=400" alt="Lyrics Photo Frame">
+                <div class="card-content">
+                    <h3 class="title">Lyrics Photo Frame</h3>
+                    <p class="price">₹ 1,149 <span class="discount">₹ 1,549</span> <span class="off">26% off</span></p>
+                    <p class="delivery-date">Earliest Delivery: 25 - Jun</p>
+                    <p class="rating">4.2 ★ <span class="reviews">(13 Reviews)</span></p>
+                </div>
+            </div>
+            <div class="card new-arrival" onclick="redirectToDetailPage('product-detail.html?id=4')">
+                <img class="background" src="https://assets.winni.in/product/primary/2023/12/92092.jpeg?dpr=1&w=400" alt="Everlasting Love Personalized Photo Lamp">
+                <div class="card-content">
+                    <h3 class="title">Everlasting Love Personalized Photo Lamp</h3>
+                    <p class="price">₹ 1,199 <span class="discount">₹ 1,199</span></p>
+                    <p class="delivery-date">Earliest Delivery: 25 - Jun</p>
+                    <p class="rating">5.0 ★ <span class="reviews">(1 Review)</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="led.js"></script>
+</body>
+</html>

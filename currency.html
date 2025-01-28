@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugs</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 500px; /* Updated width */
+            right: 50%; /* Center alignment */
+            transform: translateX(50%); /* Center alignment */
+            padding: 20px; /* Add padding to avoid the content touching the edges */
+            box-sizing: border-box;
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Wrap columns if necessary */
+        }
+
+        .dropdown-content .dropdown-column {
+            flex: 1; /* Equally distribute space */
+            min-width: 120px; /* Minimum width for columns */
+            padding: 0 10px; /* Padding between columns */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 8px 0;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+
+        /* Change the cursor to pointer when hovering over the button */
+        #currency-INR-Button {
+            cursor: pointer;
+        }
+
+        /* Highlight the ANNIVERSARY link with pink color on hover */
+        .dropdown:hover > a {
+            color: rgb(219, 20, 169);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-buttons">
+            <li class="dropdown">
+                <button id="currency-INR-Button">Currency-INR</button>
+                <div class="dropdown-content">
+                    <div class="dropdown-column">
+                        <b>Personalized Gifts</b>
+                        <a href="page2.html">AUD - Australian Dollar</a>
+                        <a href="page3.html">Cushions</a>
+                        <a href="page3.html">Yellow Strip</a>
+                        <a href="page3.html">Water Bottles</a>
+                        <a href="page3.html">Key Chains</a>
+                        <a href="page3.html">Clocks</a>
+                        <a href="page3.html">Chocolates</a>
+                        <a href="page3.html">Engraved Gifts</a>
+                        <a href="page3.html">T-shirts</a> 
+                        <a href="page3.html">Stationary Gifts</a>
+                        <a href="page3.html">Personalized Accessories</a>
+                    </div> 
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

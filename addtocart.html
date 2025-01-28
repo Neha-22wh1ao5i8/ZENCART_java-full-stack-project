@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="addtocart.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="winni.jpg" alt="Logo" class="logo">
+            
+        </header>
+        <section class="cart">
+            <h1>Shopping Cart (1)</h1>
+            <div class="delivery">
+                Deliver to: <input type="text" value="500090">
+                <button class="change-pincode">Change Pincode</button>
+            </div>
+            <div class="cart-item">
+                <img src="https://assets.winni.in/product/primary/2021/12/56668.jpeg?dpr=1&w=400" alt="Together Forever Led Lamp" class="product-image">
+                <div class="product-details">
+                    <h2>Together Forever Led Lamp</h2>
+                    <p>Estimated Delivery: <strong>28 - Jun</strong></p>
+                    <div class="quantity">
+                        Qty: <button class="qty-btn">-</button> <input type="text" value="1"> <button class="qty-btn">+</button>
+                    </div>
+                    <div class="message">
+                        Message: <input type="text" value="neha">
+                    </div>
+                    <p>Upload Photo: <a href="#">gaal.jpg</a></p>
+                    <p>Shipping Type: <span>Courier</span></p>
+                    <div class="item-actions">
+                        <button class="edit-btn">Edit</button>
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div class="price">
+                    <p><strike>₹1,502</strike> <span>₹999</span> (33% off)</p>
+                </div>
+            </div>
+            <div class="price-details">
+                <h3>Price Details (1 Items)</h3>
+                <p>MRP Total: <span>₹1,502</span></p>
+                <p>MRP Discount: <span>-₹503</span></p>
+                <h3>Total Amount: <span>₹999</span></h3>
+                <button class="checkout-btn">Continue To Checkout</button>
+                <p class="savings">You will save ₹503 on this order</p>
+                <button class="continue-shopping-btn">Continue Shopping</button>
+            </div>
+        </section>
+    </div>
+    <script src="addtocart.js"></script>
+</body>
+</html>

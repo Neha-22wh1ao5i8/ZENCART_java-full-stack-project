@@ -1,0 +1,93 @@
+/* General Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-family: Arial, sans-serif;
+}
+
+/* Modal Content */
+.modal-content {
+    background: url('your-image-url.jpg') no-repeat center center; /* Add your background image */
+    background-size: cover;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    color: #fff;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#loginButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#loginButton:hover {
+    background-color: #45a049;
+}
+
+/* Switch Modal Link */
+.switch-modal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.switch-modal a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.switch-modal a:hover {
+    text-decoration: underline;
+}

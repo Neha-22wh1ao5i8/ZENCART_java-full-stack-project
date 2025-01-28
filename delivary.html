@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        .cities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .city {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(100% / 6 - 20px);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .city img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .city span {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        .footer .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer .column {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .footer h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer p, .footer a {
+            margin: 5px 0;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .footer .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .footer .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .footer .app-icons img {
+            width: 100px;
+            height: 30px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Search for City or Pincode where you want delivery</h1>
+        <p>Winni is delivering in 750+ cities across India</p>
+        <input type="text" placeholder="Search by city or pincode">
+        <h2>Popular Cities</h2>
+        <div class="cities">
+            <div class="city" data-city="Bengaluru"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/banglore.png" alt="Bengaluru"><span>Bengaluru</span></div>
+            <div class="city" data-city="Hyderabad"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/hydrabaad.png" alt="Hyderabad"><span>Hyderabad</span></div>
+            <div class="city" data-city="Pune"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/pune.png" alt="Pune"><span>Pune</span></div>
+            <div class="city" data-city="Delhi"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/delhi.png" alt="Delhi"><span>Delhi</span></div>
+            <div class="city" data-city="Chennai"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/chennai.png" alt="Chennai"><span>Chennai</span></div>
+            <div class="city" data-city="Mumbai"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/mumbai.png" alt="Mumbai"><span>Mumbai</span></div>
+            <div class="city" data-city="Kolkata"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/kolkata.png" alt="Kolkata"><span>Kolkata</span></div>
+            <div class="city" data-city="Lucknow"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/lucknow.png" alt="Lucknow"><span>Lucknow</span></div>
+            <div class="city" data-city="Gurgaon"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/gurgaon.png" alt="Gurgaon"><span>Gurgaon</span></div>
+            <div class=" city" data-city="Ahmedabad"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/ahmedabaad.png" alt="Ahmedabad"><span>Ahmedabad</span></div>
+            <div class="city" data-city="Patna"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/patna.png" alt="Patna"><span>Patna</span></div>
+            <div class="city" data-city="Jaipur"><img src="https://assets.winni.in/groot/2021/12/15/citypageicons/desktop/jaipur.png" alt="Jaipur"><span>Jaipur</span></div>
+        </div>
+        <button id="deliveryLocationButton" onclick="window.location.href='home.html'">Delivery Location</button>
+
+        <div class="footer">
+            <div class="container">
+                <div class="column">
+                    <h3>Our Company</h3>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">Careers</a></p>
+                    <p><a href="#">Contact Us</a></p>
+                    <p><a href="#">Affiliate Program</a></p>
+                    <p><a href="#">In News</a></p>
+                </div>
+                <div class="column">
+                    <h3>Quick Links</h3>
+                    <p><a href="#">Wishes</a></p>
+                    <p><a href="#">Sitemap</a></p>
+                    <p><a href="#">Customer Reviews</a></p>
+                    <p><a href="#">Blog - Celebrate Relations</a></p>
+                    <p><a href="#">Corporate Order</a></p>
+                    <p><a href="#">Franchise Enquiry</a></p>
+                </div>
+                <div class="column">
+                    <h3>Policy & Security</h3>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Refund Policy</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Bug Bounty</a></p>
+                    <p><a href="#">Data Security</a></p>
+                    <p><a href="#">Cancellation Policy</a></p>
+                    <p><a href="#">Terms & Conditions</a></p>
+                </div>
+                <div class="column">
+                    <h3>Follow Us On</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.IWHudpy7VqCs0-KcFkuFRwHaHx&pid=Api&P=0&h=180" alt="Facebook"></a>
+                        <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.JtmXSh_uyZBaTg1eXd-NtgAAAA&pid=Api&P=0&h=180" alt="Instagram"></a>
+                        <a href="#"><img src="https://www.freepnglogos.com/uploads/youtube-icon-logo-7.png" alt="YouTube"></a>
+                        <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.IOlJ2wJrAUpUh6T1la8kxAHaEK&pid=Api&P=0&h=180" alt="Twitter"></a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.V5RoSjcG3SmfjaGnf8MyFwHaHa&pid=Api&P=0&h=180" alt="Pinterest"></a>
+                    </div>
+                    <h3>Download App</h3>
+                    <div class="app-icons">
+                        <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.GZhmkG200Ppz-ezObC3JfQHaCi&pid=Api&P=0&h=180" alt="Android App"></a>
+                        <a href="#"><img src="https://tse4.mm.bing.net/th?id=OIP.ZL1qFKREn5eKczpb1qnBvQHaCp&pid=Api&P=0&h=180" alt="Apple App"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cities = document.querySelectorAll(".city");
+            const deliveryLocationButton = document.getElementById("deliveryLocationButton");
+
+            cities.forEach(city => {
+                city.addEventListener("click", function() {
+                    const cityName = this.getAttribute("data-city");
+                    localStorage.setItem("selectedCity", cityName);
+                    deliveryLocationButton.textContent = cityName;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

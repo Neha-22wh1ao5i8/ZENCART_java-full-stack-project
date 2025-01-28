@@ -1,0 +1,133 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.location-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.location-btn:hover {
+    background-color: #d81b60;
+}
+
+.address-form {
+    display: grid;
+    gap: 10px;
+}
+
+.address-form label {
+    font-weight: bold;
+}
+
+.address-form input, 
+.address-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.mobile-group {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-group span {
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.mobile-group input {
+    flex: 1;
+    border-radius: 0 4px 4px 0;
+}
+
+.address-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #e91e63;
+    color: #fff;
+}
+
+.address-btn:hover {
+    background-color: #d81b60;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.order-summary {
+    margin-top: 20px;
+}
+
+.order-summary h2 {
+    font-size: 1.2em;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-summary li {
+    padding: 5px 0;
+}
+
+.order-summary h3 {
+    font-size: 1.4em;
+    color: #e91e63;
+    text-align: right;
+    margin-top: 10px;
+}
+.label{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
